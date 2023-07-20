@@ -1,3 +1,5 @@
+//https://softuni.bg/trainings/resources/officedocument/84784/%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B8-%D0%BB%D0%B0%D0%B1-programming-basics-with-javascript-july-2023/4161
+
 /*
 function solve(input) {
   console.log(1 + 1 + "4" + 2 + 1);
@@ -144,6 +146,7 @@ speedInfo(["3500"]);
 */
 
 // 07. Area of Figures
+/*
 function areaOfFigures(input) {
   let type = input[0];
   let result = 0;
@@ -170,3 +173,4 @@ areaOfFigures(["square", "5"]);
 areaOfFigures(["rectangle", "7", "2.5"]);
 areaOfFigures(["circle", "6"]);
 areaOfFigures(["triangle", "4.5", "20"]);
+*/

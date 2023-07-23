@@ -4,3 +4,18 @@
 // }
 
 // solve();
+
+// function solve(input) {
+//   let time = 50;
+//   console.log(Math.floor(time / 60));
+// }
+// solve([5, 10]);
+// // if is less than 60 will be 0h
+// // if is more than 60 will be 1 but without the min
+// // in this way you can take the hour of time
+
+function solve(input) {
+  let time = 70; // 70 min
+  console.log(time % 60); // % modular division
+}
+solve([5, 10]); // 10 min

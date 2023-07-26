@@ -12,6 +12,15 @@ solve();
 */
 
 // 💥 01. Numbers from 1 to 100
+/*
+function numbers1To100() {
+  for (let i = 1; i <= 100; i++) {
+    console.log(i);
+  }
+}
+
+numbers1To100();
+*/
 
 // 💥 02. Numbers N...1
 /*
@@ -68,8 +77,23 @@ evenPowersOf2(["6"]);
 evenPowersOf2(["7"]);
 */
 
-// 💥 06. Vowels Sum
+// 💥 05. Character Sequence
+/*
+function characterSequence(input) {
+  text = input[0];
 
+  for (let i = 0; i < text.length; i++) {
+    let letter = text[i];
+    console.log(letter);
+  }
+}
+
+characterSequence(["softuni"]);
+characterSequence(["ice cream"]);
+*/
+
+// 💥 06. Vowels Sum
+/*
 function vowelsSum(input) {
   let text = input[0];
   let sum = 0;
@@ -97,3 +121,43 @@ function vowelsSum(input) {
   console.log(sum);
 }
 vowelsSum(["bamboo"]);
+*/
+
+// 💥 07. Sum of Numbers
+/*
+function sumOfNumbers(input) {
+  let numUsString = String(input[0]);
+  let sum = 0;
+
+  for (let i = 0; i < numUsString.length; i++) {
+    let ch = Number(numUsString[i]);
+    sum = sum + ch;
+  }
+
+  console.log(`The sum of the digits is:${sum}`);
+}
+
+sumOfNumbers([1234]);
+sumOfNumbers(["564891"]);
+*/
+
+// 💥 08. Numbers, Divisible by 9
+/*
+function numbersDivisibleBy9(input) {
+  let start = Number(input[0]);
+  let end = Number(input[1]);
+  let sum = 0;
+  let buff = "";
+
+  for (let i = start; i <= end; i++) {
+    if (i % 9 === 0) {
+      sum += i;
+      buff += i + "\n";
+    }
+  }
+  console.log(`The sum: ${sum}`);
+  console.log(buff);
+}
+
+numbersDivisibleBy9(["100", "200"]);
+*/

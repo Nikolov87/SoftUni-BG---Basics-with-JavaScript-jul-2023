@@ -1,7 +1,7 @@
 // https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fsoftuni%2Ebg%3A443%2Fdownloads%2Fsvn%2Fprogramming%2Dbasics%2D2022%2Ftrunk%2FJS%2F04%2EPB%2DJS%2DFor%2DLoop%2F04%2E3%2520PB%2DJS%2DFor%2DLoop%2DExercise%2Edocx%3FaccessKey%3D45004A00650036004F0058003700760035004F004F0042006500650047003600770048002B003300320032005A002F0076006E007000390032006F00340069007A0030004C00320054004C0035003400590059006D006F00380073002B0039006400530062003900380069007800560031004300590031005900300033003000&wdAccPdf=0&wdEmbedFS=1
 
 // 🚨 01. Numbers Ending in 7
-
+/*
 function numbersEndingIn7() {
   let numbers = [];
   for (let i = 7; i <= 997; i++) {
@@ -13,8 +13,9 @@ function numbersEndingIn7() {
 }
 
 console.log(numbersEndingIn7());
+*/
 
-// 🚨 02. Multiplication Table
+// 🚨 02. Multiplication Table.
 // Таблица за умножение от 1 до 10  for loop
 /*
 function multiplicationTable(input) {

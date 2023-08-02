@@ -113,7 +113,7 @@ function sumNumbers(input) {
 sumNumbers(["20", "1", "2", "3", "4", "5", "6"]);
 */
 // 🚨 04. Sequence 2k+1
-
+/*
 function sequence2kPlus1(input) {
   let n = Number(input[0]);
   let k = 1;
@@ -124,3 +124,58 @@ function sequence2kPlus1(input) {
   }
 }
 sequence2kPlus1(["31"]);
+*/
+
+// 🚨 05. Account Balance
+/*
+function accountBalance(input) {
+  let index = 0;
+  let account = 0;
+
+  let command = input[index];
+  index++;
+
+  while (command !== "NoMoreMoney") {
+    let money = Number(command);
+
+    if (money < 0) {
+      console.log("Invalid operation!");
+      break;
+    }
+
+    account += money;
+    console.log("Increase: " + money.toFixed(2));
+
+    command = input[index];
+    index++;
+  }
+  console.log("Total: " + account.toFixed(2));
+}
+accountBalance(["5.51", "69.42", "100", "NoMoreMoney"]);
+accountBalance(["120", "45.55", "-150"]);
+*/
+
+// 🚨 06. Max Number
+/*
+function maxNumber(input) {
+  let index = 0;
+  let myMaxNumber = Number(input[0]);
+
+  let command = input[index];
+  index++;
+
+  while (command !== "Stop") {
+    let num = Number(command);
+
+    if (myMaxNumber < num) {
+      myMaxNumber = num;
+    }
+
+    command = input[index];
+    index++;
+  }
+  console.log(myMaxNumber);
+}
+
+maxNumber(["99", "80", "70", "100", "Stop"]);
+*/

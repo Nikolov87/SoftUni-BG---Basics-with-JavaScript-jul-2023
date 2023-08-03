@@ -180,6 +180,34 @@ function maxNumber(input) {
 maxNumber(["99", "80", "70", "100", "Stop"]);
 */
 
+// 🚨 07. Min Number
+
+function minNumber(input) {
+  let index = 0;
+  let myMinNumber = Number(input[0]);
+
+  let command = input[index];
+
+  while (command !== "Stop") {
+    let num = Number(command);
+
+    if (myMinNumber > num) {
+      myMinNumber = num;
+    }
+
+    index++;
+    command = input[index];
+  }
+  console.log(myMinNumber);
+}
+
+minNumber(["100", "99", "80", "70", "Stop"]);
+minNumber(["-10", "20", "-30", "Stop"]);
+minNumber(["45", "-20", "7", "99", "Stop"]);
+minNumber(["999", "Stop"]);
+minNumber(["-1", "-2", "Stop"]);
+
+/*
 // 🚨 08. Graduation
 
 function graduation(input) {
@@ -238,3 +266,4 @@ graduation([
   "5",
 ]);
 graduation(["Mimi", "5", "6", "5", "6", "5", "6", "6", "2", "3"]);
+*/

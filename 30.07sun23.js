@@ -148,6 +148,7 @@ coins(["1.23"]);
 
 // 🚨 06. Cake
 
+/*
 function cake(input) {
   let length = Number(input[0]);
   let width = Number(input[1]);
@@ -178,3 +179,36 @@ function cake(input) {
 
 cake(["10", "10", "20", "20", "20", "20", "21"]);
 cake(["10", "2", "2", "4", "6", "STOP"]);
+*/
+
+// 🚨 07. Moving
+
+function moving(input) {
+  let width = Number(input[0]);
+  let length = Number(input[1]);
+  let height = Number(input[2]);
+
+  let freeSpace = width * height * length;
+  let index = 3;
+  let command = input[index];
+
+  while (command !== "Done") {
+    let numberOfBoxes = Number(command);
+    freeSpace = freeSpace - numberOfBoxes;
+
+    if (freeSpace < 0) {
+      console.log(
+        `No more free space! You need ${Math.abs(freeSpace)} Cubic meters more.`
+      );
+      break;
+    }
+    index++;
+    command = input[index];
+  }
+  if (freeSpace >= 0) {
+    console.log(`${freeSpace} Cubic meters left.`);
+  }
+}
+
+moving(["10", "10", "2", "20", "20", "20", "20", "122"]);
+moving(["10", "1", "2", "4", "6", "Done"]);

@@ -16,6 +16,103 @@
 //   }
 // }
 
+// 🚨 1. Old Books
+
+/*
+function oldBooks(input) {
+  let favouriteBook = input[0];
+  let index = 1;
+  let bookIsFound = false;
+
+  let nextBookName = input[index];
+  while (nextBookName !== "No More Books") {
+    if (nextBookName === favouriteBook) {
+      bookIsFound = true;
+      break;
+    }
+    index++;
+    nextBookName = input[index];
+  }
+
+  if (bookIsFound === false) {
+    console.log("The book you search is not here!");
+    console.log(`You checked ${index - 1} books.`);
+  } else {
+    console.log(`You checked ${index - 1} books and found it.`);
+  }
+}
+
+oldBooks(["Troy", "Stronger", "Life Style", "Troy"]);
+oldBooks([
+  "The Spot",
+  "Hunger Games",
+  "Harry Potter",
+  "Torronto",
+  "Spotify",
+  "No More Books",
+]);
+oldBooks([
+  "Bourne",
+  "True Story",
+  "Forever",
+  "More Space",
+  "The Girl",
+  "Spaceship",
+  "Strongest",
+  "Profit",
+  "Tripple",
+  "Stella",
+  "The Matrix",
+  "Bourne",
+]);
+*/
+
+// 🚨 02. Exam Preparation
+
+function examPreparation(input) {
+  const maxUnsatisfactoryGrades = Number(input.shift());
+  let totalGrades = 0;
+  let unsatisfactoryGrades = 0;
+  let problemsSolved = 0;
+  let lastProblem = "";
+
+  while (input[0] !== "Enough") {
+    const problem = input.shift();
+    const grade = Number(input.shift());
+
+    totalGrades += grade;
+    problemsSolved++;
+    lastProblem = problem;
+
+    if (grade <= 4) {
+      unsatisfactoryGrades++;
+      if (unsatisfactoryGrades === maxUnsatisfactoryGrades) {
+        console.log(`You need a break, ${unsatisfactoryGrades} poor grades.`);
+        return;
+      }
+    }
+  }
+
+  const averageGrade = totalGrades / problemsSolved;
+  console.log(`Average score: ${averageGrade.toFixed(2)}`);
+  console.log(`Number of problems: ${problemsSolved}`);
+  console.log(`Last problem: ${lastProblem}`);
+}
+
+examPreparation([
+  "3",
+  "Money",
+  "6",
+  "Story",
+  "4",
+  "Spring Time",
+  "5",
+  "Bus",
+  "6",
+  "Enough",
+]);
+examPreparation(["2", "Income", "3", "Game Info", "6", "Best Player", "4"]);
+
 // 🚨 03. Vacation
 /*
 function vacation(input) {
@@ -182,7 +279,7 @@ cake(["10", "2", "2", "4", "6", "STOP"]);
 */
 
 // 🚨 07. Moving
-
+/*
 function moving(input) {
   let width = Number(input[0]);
   let length = Number(input[1]);
@@ -212,3 +309,4 @@ function moving(input) {
 
 moving(["10", "10", "2", "20", "20", "20", "20", "122"]);
 moving(["10", "1", "2", "4", "6", "Done"]);
+*/

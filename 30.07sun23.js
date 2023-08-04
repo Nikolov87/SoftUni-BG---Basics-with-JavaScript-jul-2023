@@ -61,7 +61,7 @@ vacation(["2000", "1000", "spend", "1200", "save", "2000"]);
 */
 
 // 🚨 04. Walking
-
+/*
 function walking(input) {
   let targetSteps = 10000;
   let stepsSum = 0;
@@ -99,3 +99,82 @@ walking(["1000", "1500", "2000", "6500"]);
 // walking(["1500", "300", "2500", "3000", "Going home", "200"]);
 // walking(["1500", "3000", "250", "1548", "2000", "Going home", "2000"]);
 // walking(["125", "250", "4000", "30", "2678", "4682"]);
+*/
+
+// 🚨 05. Coins
+
+/*
+function coins(input) {
+  let change = Number(input[0]);
+  let inCoins = Math.floor(change * 100);
+  let coinsCounter = 0;
+
+  while (inCoins > 0) {
+    if (inCoins >= 200) {
+      inCoins -= 200;
+      coinsCounter++;
+    } else if (inCoins >= 100) {
+      inCoins -= 100;
+      coinsCounter++;
+    } else if (inCoins >= 50) {
+      inCoins -= 50;
+      coinsCounter++;
+    } else if (inCoins >= 20) {
+      inCoins -= 20;
+      coinsCounter++;
+    } else if (inCoins >= 10) {
+      inCoins -= 10;
+      coinsCounter++;
+    } else if (inCoins >= 5) {
+      inCoins -= 5;
+      coinsCounter++;
+    } else if (inCoins >= 2) {
+      inCoins -= 2;
+      coinsCounter++;
+    } else if (inCoins >= 1) {
+      inCoins -= 1;
+      coinsCounter++;
+    }
+  }
+
+  console.log(coinsCounter);
+}
+
+coins(["1.23"]);
+// coins(["2"]);
+// coins(["0.56"]);
+// coins(["2.73"]);
+*/
+
+// 🚨 06. Cake
+
+function cake(input) {
+  let length = Number(input[0]);
+  let width = Number(input[1]);
+
+  let cakeSize = length * width;
+  let pieces = 0;
+  let index = 2;
+  let command = input[index];
+
+  while (command !== "STOP") {
+    let cakeParts = Number(command);
+
+    pieces = pieces + cakeParts;
+
+    if (pieces > cakeSize) {
+      console.log(
+        `No more cake left! You need ${pieces - cakeSize} pieces more.`
+      );
+      break;
+    }
+    index++;
+    command = input[index];
+  }
+  if (pieces <= cakeSize) {
+    console.log(`${cakeSize - pieces} pieces are left.`);
+  }
+}
+
+cake(["10", "10", "20", "20", "20", "20", "21"]);
+cake(["10", "2", "2", "4", "6", "STOP"]);

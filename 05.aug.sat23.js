@@ -28,12 +28,48 @@
 
 // 🔴 01. Clock
 
-function clock() {
-  for (let h = 0; h <= 23; h++) {
-    for (let m = 0; m <= 59; m++) {
-      console.log(`${h}:${m}`);
+// 1️⃣ first solution for judge
+
+// function clock() {
+//   for (let h = 0; h <= 23; h++) {
+//     for (let m = 0; m <= 59; m++) {
+//       console.log(`${h}:${m}`);
+//     }
+//   }
+// }
+// clock(); //
+
+// 2️⃣ Second solution not working in judge but is included 0 and 00
+
+// function clock() {
+//   for (let h = 0; h < 24; h++) {
+//     for (let m = 0; m < 60; m++) {
+//       let hToPrint = h;
+//       let mToPrint = m;
+//       if (h < 10) {
+//         hToPrint = "0" + h;
+//       }
+//       if (m < 10) {
+//         mToPrint = "0" + m;
+//       }
+//       console.log(`${hToPrint}:${mToPrint}`);
+//     }
+//   }
+// }
+
+// clock();
+
+// 🔴 02. Multiplication Table
+
+function multiplicationTable() {
+  for (let x = 1; x <= 10; x++) {
+    for (let y = 1; y <= 10; y++) {
+      let res = x * y;
+      console.log(`${x} * ${y} = ${res}`);
     }
   }
 }
 
-clock();
+multiplicationTable();
+
+// 🔴 03. Combinations

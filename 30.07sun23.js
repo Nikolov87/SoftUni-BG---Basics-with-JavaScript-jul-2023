@@ -69,6 +69,7 @@ oldBooks([
 
 // 🚨 02. Exam Preparation
 
+/*
 function examPreparation(input) {
   const maxUnsatisfactoryGrades = Number(input.shift());
   let totalGrades = 0;
@@ -112,6 +113,7 @@ examPreparation([
   "Enough",
 ]);
 examPreparation(["2", "Income", "3", "Game Info", "6", "Best Player", "4"]);
+*/
 
 // 🚨 03. Vacation
 /*

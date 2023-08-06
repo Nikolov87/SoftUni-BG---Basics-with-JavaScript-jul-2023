@@ -60,7 +60,7 @@
 // clock();
 
 // 🔴 02. Multiplication Table
-
+/*
 function multiplicationTable() {
   for (let x = 1; x <= 10; x++) {
     for (let y = 1; y <= 10; y++) {
@@ -71,5 +71,135 @@ function multiplicationTable() {
 }
 
 multiplicationTable();
+*/
 
 // 🔴 03. Combinations
+
+/*
+function combinations(input) {
+  let n = Number(input[0]);
+  let validCombinationsCount = 0;
+
+  for (let x1 = 0; x1 <= n; x1++) {
+    for (let x2 = 0; x2 <= n; x2++) {
+      for (let x3 = 0; x3 <= n; x3++) {
+        if (x1 + x2 + x3 === n) {
+          validCombinationsCount++;
+        }
+      }
+    }
+  }
+
+  console.log(validCombinationsCount);
+}
+
+combinations(["25"]); // 351
+*/
+
+// 🔴 04. Sum of Two Numbers
+
+/*
+function sumOfTwoNumbers(input) {
+  let startInterval = Number(input[0]);
+  let endInterval = Number(input[1]);
+  let magicNumber = Number(input[2]);
+  let isFound = false;
+  let counter = 0;
+
+  for (let x = startInterval; x <= endInterval; x++) {
+    for (let y = startInterval; y <= endInterval; y++) {
+      counter++;
+      if (x + y === magicNumber) {
+        console.log(`Combination N:${counter} (${x} + ${y} = ${magicNumber})`);
+        isFound = true;
+        break;
+      }
+    }
+    if (isFound) {
+      /// isFound === true
+      break;
+    }
+  }
+  if (!isFound) {
+    // isFound === false
+    console.log(`${counter} combinations - neither equals ${magicNumber}`);
+  }
+}
+sumOfTwoNumbers(["1", "10", "5"]);
+sumOfTwoNumbers(["23", "24", "20"]);
+sumOfTwoNumbers(["88", "888", "1000"]);
+sumOfTwoNumbers(["88", "888", "2000"]);
+*/
+
+// 🔴 05. Traveling
+
+/*
+function traveling(input) {
+  let index = 0;
+
+  while (true) {
+    let destination = input[index++];
+    if (destination === "End") {
+      break;
+    }
+
+    let minBudget = Number(input[index++]);
+    let totalSavings = 0;
+
+    while (totalSavings < minBudget) {
+      let currentSavings = Number(input[index++]);
+      totalSavings += currentSavings;
+    }
+
+    console.log(`Going to ${destination}!`);
+  }
+}
+*/
+
+traveling([
+  "Greece",
+  "1000",
+  "200",
+  "200",
+  "300",
+  "100",
+  "150",
+  "240",
+  "Spain",
+  "1200",
+  "300",
+  "500",
+  "193",
+  "423",
+  "End",
+]);
+
+//
+
+// 🔴 06. Building
+
+/*
+function building(input) {
+  let x = Number(input[0]);
+  let y = Number(input[1]);
+
+  for (let floor = x; floor > 0; floor--) {
+    let buff = "";
+    for (let room = 0; room < y; room++) {
+      let ch = "";
+      if (floor === x) {
+        ch = "L";
+      } else if (floor % 2 !== 0) {
+        ch = "A";
+      } else {
+        ch = "O";
+      }
+      buff += `${ch}${floor}${room} `;
+    }
+    console.log(buff);
+  }
+}
+
+building(["6", "4"]);
+// building(["9", "5"]);
+*/

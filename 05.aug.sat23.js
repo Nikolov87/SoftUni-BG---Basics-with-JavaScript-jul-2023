@@ -154,7 +154,7 @@ function traveling(input) {
     console.log(`Going to ${destination}!`);
   }
 }
-*/
+
 
 traveling([
   "Greece",
@@ -173,7 +173,7 @@ traveling([
   "423",
   "End",
 ]);
-
+*/
 //
 
 // 🔴 06. Building

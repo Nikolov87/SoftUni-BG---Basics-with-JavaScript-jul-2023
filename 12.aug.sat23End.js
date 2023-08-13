@@ -8,6 +8,7 @@
 // Задача 3. Билети за снукър
 // https://judge.softuni.org/Contests/Practice/Index/1538#5
 
+/*
 function worldSnookerChampionship(input) {
   let stage = input[0];
   let type = input[1];
@@ -73,6 +74,7 @@ function worldSnookerChampionship(input) {
 worldSnookerChampionship(["Final", "Premium", "25", "Y"]);
 worldSnookerChampionship(["Semi final", "VIP", "9", "Y"]);
 worldSnookerChampionship(["Quarter final", "Standard", "11", "N"]);
+*/
 
 // //
 // 🔴 04. Renovation
